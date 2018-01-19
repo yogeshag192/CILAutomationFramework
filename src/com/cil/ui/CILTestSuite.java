@@ -20,7 +20,7 @@ public class CILTestSuite extends BaseTest {
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyCILDashboardComponents");
 		cilM.VerifyCILDashboardComponents();
-		System.out.println("Completed execution of :: VerifyCILDashboardComponents");
+		System.out.println("Completed execution of :: VerifyCILDashboardComponents..");
 		System.out.println("-----------------------------------------------------------------\n");
 	}
 	
