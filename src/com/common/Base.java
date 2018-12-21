@@ -130,10 +130,15 @@ public class Base {
 	public void type(String locator, String text) throws InterruptedException{
 		By by = parseLocator(locator);
 
-		WebElement ele = driver.findElement(by);
-		ele.click();
-		Thread.sleep(1000);
-		ele.sendKeys(text);
+		try {
+			WebElement ele = driver.findElement(by);
+			ele.click();
+			Thread.sleep(1000);
+			ele.sendKeys(text);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void waitForElementToBeVisible(String locator){

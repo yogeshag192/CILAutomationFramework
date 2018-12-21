@@ -160,6 +160,7 @@ public class BaseTest{
 	@AfterClass
 	public void tearDown(){
 		driver.close();
+		System.out.println("Closing driver instance!!");
 	}
 	
 	private void LoadProperties() throws IOException {

@@ -6,12 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.common.Base;
+import com.common.BaseTest;
+
 
 public class AutoComplete extends Base {
 	
@@ -20,16 +19,16 @@ public class AutoComplete extends Base {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test
+	
 	public void AutocompleteBox() throws InterruptedException{
 		
 		Actions action = new Actions(driver);
-		WebElement element = driver.findElement(By.xpath("//figure/img[@src = 'images/autocomplete.jpg']"));
+		WebElement element = driver.findElement(By.xpath("//figure/img[contains(@src,'autocomplete')]"));
 		
 		action.moveToElement(element).build().perform();
 		System.out.println("Moved to element : " +element.getAttribute("src"));
 		action.click(element).perform();
-		waitForPageToLoad(driver);
+		Thread.sleep(5000);
 		
 		
 		driver.switchTo().frame(driver.findElement(By.xpath("//div[@id='example-1-tab-1']//iframe[@class = 'demo-frame']")));

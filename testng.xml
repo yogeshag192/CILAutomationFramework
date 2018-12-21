@@ -3,10 +3,10 @@
 
 <suite name="Test Suite: CIL Test Suite" parallel="none">
 
-	<test name="CIL Test Cases">
+	<test name="Way to Automation Test Cases">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.cil.ui.CILTestSuite"/>
+			<class name="com.way2AutomationComponents.TestSuite"/>
 			</classes>
 	</test>
 	

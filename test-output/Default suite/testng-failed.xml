@@ -3,26 +3,24 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.cil.ui.TestCILPortal">
+      <class name="com.cil.ui.CILTestSuite">
         <methods>
-          <include name="VerifyLabVisitsOnDashboard"/>
-          <include name="VerifyToolsAndTechnologiesOnDashboard"/>
+          <include name="VerifyOpinionPollSubmit"/>
           <include name="setUp"/>
-          <include name="VerifyUpcomingEventsOnDashboard"/>
-          <include name="VerifyLinksOnCILDashboard"/>
-          <include name="VerifyTrendingIdeasOnDashboard"/>
+          <include name="VerifyOnGoingProjects"/>
+          <include name="VerifyCILDashboardComponents"/>
           <include name="beforeSuiteExtentSetup"/>
           <include name="getResult"/>
-          <include name="VerifyOpinionPollSubmit"/>
+          <include name="VerifyLabVisitsOnDashboard"/>
+          <include name="VerifyToolsAndTechnologiesOnDashboard"/>
+          <include name="VerifyUpcomingEventsOnDashboard"/>
           <include name="endReport"/>
-          <include name="VerifyLinksOnCILHomePage"/>
           <include name="tearDown"/>
-          <include name="test7"/>
-          <include name="VerifyCILDashboardComponents"/>
-          <include name="VerifyOnGoingProjects"/>
+          <include name="VerifyTrendingIdeasOnDashboard"/>
+          <include name="VerifyLinksOnCILDashboard"/>
           <include name="beforeMethodExtentSetup"/>
         </methods>
-      </class> <!-- com.cil.ui.TestCILPortal -->
+      </class> <!-- com.cil.ui.CILTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,6 +20,11 @@ import com.common.Base;
 
 public class DatePicker extends Base {
 
+	public DatePicker(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	/*@BeforeTest
 	public void launchWebsite() throws InterruptedException, IOException {
 		launchURL("http://way2automation.com/way2auto_jquery/index.php");
@@ -29,10 +34,7 @@ public class DatePicker extends Base {
 		d.loginToWay2Automation();
 	}*/
 
-	public DatePicker(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	@Test
 	public void launchDatePickerControls() throws InterruptedException {

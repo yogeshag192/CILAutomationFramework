@@ -36,12 +36,20 @@ public class LoginToApp extends Base {
             break; 
             
         case "WAY2A":
-        	appUrl = appProperties.getProperty("URL");
+        	appUrl = appProperties.getProperty("URLWay2A");
         	userName = appProperties.getProperty("way2UserName");
         	password = appProperties.getProperty("way2Password");
         	driver.get(appUrl);
             waitForPageToLoad(driver);
             driver.manage().window().maximize();
+            waitForElementToBeClickable(getElementValue("signInLinkWay2"));
+    		clickElement(getElementValue("signInLinkWay2"));
+    		Thread.sleep(3000);
+    		waitForElementToBeVisible(getElementValue("userNameWay2"));
+    		type(getElementValue("userNameWay2"), getInputValue("way2UserName"));
+    		type(getElementValue("PasswordWay2"), getInputValue("way2Password"));
+    		clickElement(getElementValue("submitButtonWay2"));
+    		Thread.sleep(9000);
             
             break;
         
