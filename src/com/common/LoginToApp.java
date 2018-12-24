@@ -39,6 +39,7 @@ public class LoginToApp extends Base {
         	appUrl = appProperties.getProperty("URLWay2A");
         	userName = appProperties.getProperty("way2UserName");
         	password = appProperties.getProperty("way2Password");
+        	System.out.println("App properties retrieved from app.properties: " +userName +" " +password);
         	driver.get(appUrl);
             waitForPageToLoad(driver);
             driver.manage().window().maximize();
@@ -46,13 +47,26 @@ public class LoginToApp extends Base {
     		clickElement(getElementValue("signInLinkWay2"));
     		Thread.sleep(3000);
     		waitForElementToBeVisible(getElementValue("userNameWay2"));
-    		type(getElementValue("userNameWay2"), getInputValue("way2UserName"));
-    		type(getElementValue("PasswordWay2"), getInputValue("way2Password"));
+    		type(getElementValue("userNameWay2"), userName);
+    		type(getElementValue("PasswordWay2"), password);
     		clickElement(getElementValue("submitButtonWay2"));
     		Thread.sleep(9000);
             
             break;
         
+        case "Google":
+        	appUrl = appProperties.getProperty("urlGoogle");
+ 
+        	driver.get(appUrl);
+            waitForPageToLoad(driver);
+            driver.manage().window().maximize();
+            waitForElementToBeClickable(getElementValue("searchBox"));
+    		clickElement(getElementValue("searchBox"));
+    		type(getElementValue("searchBox"), "ABCD");
+    		clickElement(getElementValue("searchButton"));
+    		Thread.sleep(9000);
+            
+            break;
             
         default:
             System.out.println("Something is wrong!!!!! Should not be in DEFAULT");

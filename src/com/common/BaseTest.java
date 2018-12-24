@@ -115,15 +115,20 @@ public class BaseTest{
 		
 	}
 		
-	public WebDriver setupSeleniumWebDriver(String browser) {
+	public void setupSeleniumWebDriver(String browser) {
 			try {
 				if (browser.equals("Firefox")) {
 					System.out.println("Setting up FireFox Driver.");
 					
-					String geckoDriverPath = System.getProperty("user.dir") +"\\Files\\geckodriver.exe";
+					File geckoDriverPath = new File(System.getProperty("user.dir") +"\\Files\\geckodriver.exe");
 					System.out.println(geckoDriverPath);
-					System.setProperty("webdriver.gecko.driver", geckoDriverPath); 
-					driver = new FirefoxDriver();
+					System.setProperty("webdriver.gecko.driver", geckoDriverPath.getAbsolutePath()); 
+					FirefoxOptions firefox_options  = new FirefoxOptions();
+					firefox_options.setCapability("marionette", true);
+					firefox_options.addPreference("security.insecure_password.ui.enabled", false);
+					firefox_options.addPreference("security.insecure_field_warning.contextual.enabled", false);
+					
+					driver = new FirefoxDriver(firefox_options);
 
 					/*FirefoxProfile profile = new FirefoxProfile();
 					profile.setPreference("browser.download.folderList", 2);
@@ -154,7 +159,7 @@ public class BaseTest{
 			} catch (Exception e) {
 				System.out.println("Exception occured during driver setup : " + e.getMessage());
 			}
-			return driver;
+			//return driver;
 		}
 
 	@AfterClass

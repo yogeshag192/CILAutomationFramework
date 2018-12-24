@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
@@ -74,7 +75,7 @@ public class Base {
 	}
 	
 	public String getInputValue(String propertyName) throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\Files\\input.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\Files\\app.properties");
 		appProperties = new Properties();
 		appProperties.load(fis);
 		return appProperties.getProperty(propertyName);
@@ -132,11 +133,32 @@ public class Base {
 
 		try {
 			WebElement ele = driver.findElement(by);
+			ele.clear();
 			ele.click();
-			Thread.sleep(1000);
+			System.out.println("Typing text: " +text + " in Text Box: " +ele.getAttribute("name"));
 			ele.sendKeys(text);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//needs to be corrected
+	public void typeUsingExecuter(String locator, String text) throws InterruptedException{
+		By by = parseLocator(locator);
+		
+		try {
+			WebElement ele = driver.findElement(by);
+			ele.clear();
+			ele.click();
+			Thread.sleep(2000);
+			System.out.println("Typing text: " +text + " in Text Box: " +ele.getAttribute("name"));
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			String argOf0 = "arguments[0].value="+text+";";
+			jse.executeScript(argOf0, ele);
+			System.out.println("Type successful..");
+		} catch (Exception e) {
+			System.out.println("Exception Caught during type action");
 			e.printStackTrace();
 		}
 	}
