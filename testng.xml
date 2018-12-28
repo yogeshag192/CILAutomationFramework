@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test Suite: CIL Test Suite" parallel="none">
+<suite name="Test Suite" parallel="none">
 
-	<test name="Way to Automation Test Cases">
+	<!-- <test name="Way to Automation Test Cases">
 		<parameter name="browser" value="Firefox"></parameter>
 		<classes>
 			<class name="com.way2AutomationComponents.TestSuite"/>
 			</classes>
+	</test> -->
+	
+	<test name="Practice test cases">
+		
+		<classes>
+		
+			<class name="com.practice.TestNGTests"/>
+			
+			</classes>
 	</test>
 	
-	<!-- <test name="CIL Test Cases2">
-		<parameter name="browser" value="Firefox"></parameter>
+	<test name="Practice test cases2">
+		
 		<classes>
-			<class name="com.cil.ui.CILTestSuite2"/>
-		</classes>
-	</test> -->
+		
+			<class name="com.practice.TestNGTests2"/>
+			
+			</classes>
+	</test>
 </suite>
+
+

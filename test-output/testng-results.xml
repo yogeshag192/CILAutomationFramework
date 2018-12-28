@@ -1,64 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite: CIL Test Suite" duration-ms="15873" started-at="2018-12-21T15:34:35Z" finished-at="2018-12-21T15:34:51Z">
+  <suite name="Test Suite" duration-ms="134" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
     <groups>
     </groups>
-    <test name="Way to Automation Test Cases" duration-ms="15873" started-at="2018-12-21T15:34:35Z" finished-at="2018-12-21T15:34:51Z">
-      <class name="com.way2AutomationComponents.TestSuite">
-        <test-method status="PASS" signature="beforeSuiteExtentSetup()[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="beforeSuiteExtentSetup" is-config="true" duration-ms="223" started-at="2018-12-21T21:04:35Z" finished-at="2018-12-21T21:04:35Z">
+    <test name="Practice test cases" duration-ms="36" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
+      <class name="com.practice.TestNGTests">
+        <test-method status="PASS" signature="method1()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method1" is-config="true" duration-ms="1" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuiteExtentSetup -->
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="setUp" is-config="true" duration-ms="15802" started-at="2018-12-21T21:04:35Z" finished-at="2018-12-21T21:04:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[D:\Users\INNOVATION LAB\Desktop\Yogesh\My Workspace\CILAutomationFramework\Files\input.properties (The system cannot find the file specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: D:\Users\INNOVATION LAB\Desktop\Yogesh\My Workspace\CILAutomationFramework\Files\input.properties (The system cannot find the file specified)at java.io.FileInputStream.open0(Native Method)at java.io.FileInputStream.open(Unknown Source)at java.io.FileInputStream.<init>(Unknown Source)at java.io.FileInputStream.<init>(Unknown Source)at com.common.Base.getInputValue(Base.java:77)at com.common.LoginToApp.loginToApplication(LoginToApp.java:49)at com.common.BaseTest.setUp(BaseTest.java:114)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="bcmethod3()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="bcmethod3" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="beforeMethodExtentSetup" is-config="true" duration-ms="0" started-at="2018-12-21T21:04:51Z" finished-at="2018-12-21T21:04:51Z">
+        </test-method> <!-- bcmethod3 -->
+        <test-method status="PASS" signature="method3()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method3" duration-ms="7" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="SKIP" signature="VerifyAutoComplete()[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="VerifyAutoComplete" duration-ms="0" started-at="2018-12-21T21:04:51Z" finished-at="2018-12-21T21:04:51Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[D:\Users\INNOVATION LAB\Desktop\Yogesh\My Workspace\CILAutomationFramework\Files\input.properties (The system cannot find the file specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: D:\Users\INNOVATION LAB\Desktop\Yogesh\My Workspace\CILAutomationFramework\Files\input.properties (The system cannot find the file specified)at java.io.FileInputStream.open0(Native Method)at java.io.FileInputStream.open(Unknown Source)at java.io.FileInputStream.<init>(Unknown Source)at java.io.FileInputStream.<init>(Unknown Source)at com.common.Base.getInputValue(Base.java:77)at com.common.LoginToApp.loginToApplication(LoginToApp.java:49)at com.common.BaseTest.setUp(BaseTest.java:114)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAutoComplete -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="getResult" is-config="true" duration-ms="0" started-at="2018-12-21T21:04:51Z" finished-at="2018-12-21T21:04:51Z">
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-12-21T21:04:51Z" finished-at="2018-12-21T21:04:51Z">
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="method4()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method4" duration-ms="1" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:com.way2AutomationComponents.TestSuite@4dfa3a9d]" name="endReport" is-config="true" duration-ms="0" started-at="2018-12-21T21:04:51Z" finished-at="2018-12-21T21:04:51Z">
+        </test-method> <!-- method4 -->
+      </class> <!-- com.practice.TestNGTests -->
+    </test> <!-- Practice test cases -->
+    <test name="Practice test cases2" duration-ms="18" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
+      <class name="com.practice.TestNGTests2">
+        <test-method status="PASS" signature="method3()[pri:0, instance:com.practice.TestNGTests2@7085bdee]" name="method3" duration-ms="2" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- com.way2AutomationComponents.TestSuite -->
-    </test> <!-- Way to Automation Test Cases -->
-  </suite> <!-- Test Suite: CIL Test Suite -->
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="method4()[pri:0, instance:com.practice.TestNGTests2@7085bdee]" name="method4" duration-ms="5" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method4 -->
+      </class> <!-- com.practice.TestNGTests2 -->
+      <class name="com.practice.TestNGTests">
+        <test-method status="PASS" signature="bsmethod4()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="bsmethod4" is-config="true" duration-ms="12" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsmethod4 -->
+      </class> <!-- com.practice.TestNGTests -->
+    </test> <!-- Practice test cases2 -->
+  </suite> <!-- Test Suite -->
 </testng-results>
