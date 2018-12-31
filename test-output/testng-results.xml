@@ -1,55 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="134" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
+  <suite name="Default suite" duration-ms="64" started-at="2018-12-31T10:59:35Z" finished-at="2018-12-31T10:59:35Z">
     <groups>
+      <group name="abc">
+        <method signature="TestNGTests.method3()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method3" class="com.practice.TestNGTests"/>
+      </group> <!-- abc -->
+      <group name="abe">
+        <method signature="TestNGTests.method4()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method4" class="com.practice.TestNGTests"/>
+      </group> <!-- abe -->
     </groups>
-    <test name="Practice test cases" duration-ms="36" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
+    <test name="Default test" duration-ms="64" started-at="2018-12-31T10:59:35Z" finished-at="2018-12-31T10:59:35Z">
       <class name="com.practice.TestNGTests">
-        <test-method status="PASS" signature="method1()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method1" is-config="true" duration-ms="1" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+        <test-method status="PASS" signature="method1()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method1" is-config="true" duration-ms="16" started-at="2018-12-31T16:29:35Z" finished-at="2018-12-31T16:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method1 -->
-        <test-method status="PASS" signature="bcmethod3()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="bcmethod3" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcmethod3 -->
-        <test-method status="PASS" signature="method3()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method3" duration-ms="7" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+        <test-method status="PASS" signature="method3()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method3" duration-ms="1" started-at="2018-12-31T16:29:35Z" finished-at="2018-12-31T16:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method3 -->
-        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-31T16:29:35Z" finished-at="2018-12-31T16:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method2 -->
-        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+        <test-method status="PASS" signature="method2()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method2" is-config="true" duration-ms="0" started-at="2018-12-31T16:29:35Z" finished-at="2018-12-31T16:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method2 -->
-        <test-method status="PASS" signature="method4()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="method4" duration-ms="1" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
+        <test-method status="PASS" signature="method4()[pri:0, instance:com.practice.TestNGTests@4883b407]" name="method4" duration-ms="0" started-at="2018-12-31T16:29:35Z" finished-at="2018-12-31T16:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method4 -->
       </class> <!-- com.practice.TestNGTests -->
-    </test> <!-- Practice test cases -->
-    <test name="Practice test cases2" duration-ms="18" started-at="2018-12-28T11:45:14Z" finished-at="2018-12-28T11:45:14Z">
-      <class name="com.practice.TestNGTests2">
-        <test-method status="PASS" signature="method3()[pri:0, instance:com.practice.TestNGTests2@7085bdee]" name="method3" duration-ms="2" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method3 -->
-        <test-method status="PASS" signature="method4()[pri:0, instance:com.practice.TestNGTests2@7085bdee]" name="method4" duration-ms="5" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method4 -->
-      </class> <!-- com.practice.TestNGTests2 -->
-      <class name="com.practice.TestNGTests">
-        <test-method status="PASS" signature="bsmethod4()[pri:0, instance:com.practice.TestNGTests@5622fdf]" name="bsmethod4" is-config="true" duration-ms="12" started-at="2018-12-28T17:15:14Z" finished-at="2018-12-28T17:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsmethod4 -->
-      </class> <!-- com.practice.TestNGTests -->
-    </test> <!-- Practice test cases2 -->
-  </suite> <!-- Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

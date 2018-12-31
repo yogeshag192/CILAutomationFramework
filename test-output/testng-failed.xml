@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite: CIL Test Suite]">
-  <test name="Way to Automation Test Cases(failed)">
-    <parameter name="browser" value="Chrome"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.way2AutomationComponents.TestSuite">
+      <class name="com.cil.ui.CILTestSuite">
         <methods>
+          <include name="VerifyOpinionPollSubmit"/>
           <include name="setUp"/>
-          <include name="endReport"/>
-          <include name="VerifyAutoComplete"/>
-          <include name="tearDown"/>
+          <include name="VerifyOnGoingProjects"/>
+          <include name="VerifyCILDashboardComponents"/>
           <include name="beforeSuiteExtentSetup"/>
-          <include name="beforeMethodExtentSetup"/>
           <include name="getResult"/>
+          <include name="VerifyLabVisitsOnDashboard"/>
+          <include name="VerifyToolsAndTechnologiesOnDashboard"/>
+          <include name="VerifyUpcomingEventsOnDashboard"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="VerifyTrendingIdeasOnDashboard"/>
+          <include name="VerifyLinksOnCILDashboard"/>
+          <include name="beforeMethodExtentSetup"/>
         </methods>
-      </class> <!-- com.way2AutomationComponents.TestSuite -->
+      </class> <!-- com.cil.ui.CILTestSuite -->
     </classes>
-  </test> <!-- Way to Automation Test Cases(failed) -->
-</suite> <!-- Failed suite [Test Suite: CIL Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

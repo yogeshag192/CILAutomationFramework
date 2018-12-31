@@ -2,17 +2,19 @@ package com.practice;
 
 import org.testng.annotations.Test;
 
-public class TestNGTests2 {
+public class TestNGTests2 extends Config {
 	
-	@Test
+	@Test(groups="abc")
 	public void method3(){
-		System.out.println("class2 Method 3 invoked..");
+		System.out.println("TestNGTests2 Method 3 invoked..");
 	}
 	
-	@Test
+	
+	@Test(groups="abe")
 	public void method4(){
-		System.out.println("class2 Method 4 invoked..");
+		System.out.println("TestNGTests2 Method 4 invoked..");
 	}
 	
 
 }
+

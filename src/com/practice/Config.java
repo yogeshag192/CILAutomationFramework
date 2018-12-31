@@ -19,12 +19,12 @@ public class Config {
 	}
 	
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void method3(){
 		System.out.println("@BeforeClass Invoked");
 	}
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void method4(){
 		System.out.println("@BeforeSuite Invoked");
 	}
